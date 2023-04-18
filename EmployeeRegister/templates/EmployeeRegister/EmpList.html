@@ -3,6 +3,24 @@
 
 
 {% block body %}
-    <p>This is list</p>
+    <table class="table table-borderless">
+        <thead class="border-buttom font-weight-bold">
+            <tr>
+                <td>Full Name</td>
+                <td>Mobile</td>
+                <td>Possition</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for employee in EmpList %}
+            <tr>
+                <td> {{employee.fullName}} </td>
+                <td> {{employee.Mobile}} </td>
+                <td> {{employee.Possition}} </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
 {% endblock body %}
     
