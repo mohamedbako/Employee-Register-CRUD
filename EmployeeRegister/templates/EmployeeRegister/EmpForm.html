@@ -15,10 +15,19 @@
             {{ form.Possition|as_crispy_field }}   
         </div>
     </div>
-    <button class="btn btn-success" type="submit">
-        Submit
-        <i class="fa-solid fa-cloud-arrow-up"></i>
-    </button>
+    <div class="row">
+        <div class="col-md-8">
+            <button class="btn btn-success btn-block btn-lg" type="submit">
+                Submit
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+            </button>
+        </div>
+        <div class="col-md-3">
+            <a href="{% url 'EmpList' %}" class="btn btn-secondary btn-block btn-lg">
+                <i class="fas fa-list"></i>  Back To List
+            </a>
+        </div>
+    </div>
 </form>
 {% endblock body %}
     
