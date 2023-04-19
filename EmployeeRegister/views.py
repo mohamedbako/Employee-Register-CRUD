@@ -25,5 +25,9 @@ def employeeForm(request, id = 0):
         if form.is_valid():
             form.save()
         return redirect('/employee/list')
-def employeeDelete(requset):
-    pass
+    
+
+def employeeDelete(requset, id):
+    employee = Employees.objects.get(pk = id)
+    employee.delete()
+    return redirect('/employee/list')
