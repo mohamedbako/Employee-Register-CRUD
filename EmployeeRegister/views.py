@@ -8,12 +8,20 @@ def employeeList(requset):
     context = {'EmpList': Employees.objects.all()}
     return render(requset, 'EmployeeRegister/EmpList.html', context)
 
-def employeeForm(request):
+def employeeForm(request, id = 0):
     if request.method == 'GET':
-        form = EmployeeForms()
+        if id == 0:
+            form = EmployeeForms()
+        else:
+            employee = Employees.objects.get(pk = id)
+            form = EmployeeForms(instance = employee)
         return render(request, 'EmployeeRegister/EmpForm.html', {'form': form})
     else:
-        form = EmployeeForms(request.POST)
+        if id == 0:
+            form = EmployeeForms(request.POST)
+        else:
+            employee = Employees.objects.get(pk = id)
+            form = EmployeeForms(request.POST, instance = employee)
         if form.is_valid():
             form.save()
         return redirect('/employee/list')
