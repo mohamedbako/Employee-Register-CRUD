@@ -7,7 +7,7 @@ The Employee Management System is a web application built using **Django** and *
 
 The Employee Management System provides the following features:
 
-- Employee registration: Users can register new employees by providing basic information such as name, email address, and department.
+- Employee registration: Users can register new employees by providing basic information.
 - Employee editing: Users can edit the information of registered employees.
 - Employee deletion: Users can delete employees from the system.
 
