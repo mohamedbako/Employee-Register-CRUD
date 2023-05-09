@@ -13,9 +13,9 @@ The Employee Management System provides the following features:
 
 
 ![1](https://github.com/mohamedbako/Employee-Register-CRUD/assets/33379873/afd13722-f821-4efa-96f0-509f6d45b93f)
-![2](https://github.com/mohamedbako/Employee-Register-CRUD/assets/33379873/fd2a49a2-e7c2-4a9c-9388-88974f11244c)
 ![3](https://github.com/mohamedbako/Employee-Register-CRUD/assets/33379873/1713663e-4731-4546-8cee-64c2f7168be1)
 ![4](https://github.com/mohamedbako/Employee-Register-CRUD/assets/33379873/56ab52b9-c73e-4ff9-bdee-2d532da65495)
+![2](https://github.com/mohamedbako/Employee-Register-CRUD/assets/33379873/fd2a49a2-e7c2-4a9c-9388-88974f11244c)
 
 ![Logo](https://ashnik-images.s3.amazonaws.com/prod/wp-content/uploads/2021/02/20050444/Postgresql-w.png)
 
