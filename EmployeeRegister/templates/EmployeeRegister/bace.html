@@ -8,11 +8,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Employee Register</title>
 </head>
+
+<style>
+    body{
+        background: linear-gradient(315deg, transparent 75%, #000000 0)-37.5px 0,
+        linear-gradient(45deg, transparent 75%, #000000 0) 37.5px 0,
+        linear-gradient(135deg, #333 50%, transparent 0) 0 0,
+        linear-gradient(45deg, #4d4d4d 50%, #666 0) 0 0 #666;
+        background-size: 75px 75px;
+
+    }
+    .jumbotron{
+        -webkit-backdrop-filter: blur(9px);
+        backdrop-filter: blur(9px);
+        border: 1px solid rgba(255,255,255,0.25);
+        background: rgba(255,255,255,0.5);
+    }
+</style>
+
 <body>
-    <div class="container">
-        <div class="col-md-10 offset-1 mt-5">
+    <div class="container-fluid">
+        <div class="col-md-10 mx-auto mt-5">
             <div class="jumbotron">
-                <h1 class="display-4">Employee Register</h1>
+                <h1 class="display-4 fw-bold text-white" style="font-weight: 700;">Employee Register 📥</h1>
                 <hr class="my-4">
                 {% block body %}
                 {% endblock body %}            

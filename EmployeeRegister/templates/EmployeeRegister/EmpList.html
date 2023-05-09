@@ -4,19 +4,19 @@
 
 {% block body %}
     <table class="table table-borderless">
-        <thead class="border-buttom font-weight-bold">
+        <thead class="border-buttom text-white font-weight-bold">
             <tr>
                 <td>Full Name</td>
                 <td>Mobile</td>
                 <td>Possition</td>
                 <td>
-                    <a href="{% url 'EmpInsert' %}" class="btn btn-outline-success">
+                    <a href="{% url 'EmpInsert' %}" class="btn btn-light">
                         <i class="fas fa-plus"></i> Add New
                     </a>
                 </td>
             </tr>
         </thead>
-        <tbody>
+        <tbody class = "text-white">
             {% for employee in EmpList %}
             <tr>
                 <td> {{employee.fullName}} </td>
@@ -24,12 +24,12 @@
                 <td> {{employee.Possition}} </td>
                 <td> 
                     <a href="{% url 'EmpEdit' employee.id %}" class="btn text-secondary px-0">
-                        <i class="far fa-edit fa-lg"></i>
+                        <i class="far fa-edit fa-lg text-white"></i>
                     </a>
                     <form class="d-inline" action="{% url 'EmpDel' employee.id %}" method="POST">
                         {% csrf_token %}
-                        <button type="submit" class="btn">
-                            <i class="fa-sharp fa-solid fa-lg fa-trash text-danger float-right"></i>
+                        <button type="submit" class="btn" style="background-color: transparent;">
+                            <i class="fa-sharp fa-solid fa-lg fa-trash text-white float-right"></i>
                         </button>
                     </form>
                 </td>

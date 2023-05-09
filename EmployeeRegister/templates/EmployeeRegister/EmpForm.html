@@ -3,7 +3,7 @@
 
 
 {% block body %}
-<form action="" method="POST" autocomplete="off">
+<form action="" method="POST" autocomplete="off" class = "text-white" >
     {% csrf_token %}
     {{ form.fullName|as_crispy_field }}   
     {{ form.Mobile|as_crispy_field }}   
@@ -15,15 +15,15 @@
             {{ form.Possition|as_crispy_field }}   
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-8">
+    <div class="row pt-5">
+        <div class="col-md-8 pb-3">
             <button class="btn btn-success btn-block btn-lg" type="submit">
                 Submit
                 <i class="fa-solid fa-cloud-arrow-up"></i>
             </button>
         </div>
         <div class="col-md-3">
-            <a href="{% url 'EmpList' %}" class="btn btn-secondary btn-block btn-lg">
+            <a href="{% url 'EmpList' %}" class="btn btn-dark btn-block btn-lg">
                 <i class="fas fa-list"></i>  Back To List
             </a>
         </div>
